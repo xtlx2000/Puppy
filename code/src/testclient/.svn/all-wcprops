@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testclient
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testclient/main.cpp
+END
+ServerAgent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testclient/ServerAgent.cpp
+END
+testprotocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22428/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testclient/testprotocol.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22458/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testclient/Makefile.am
+END
+ServerAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testclient/ServerAgent.h
+END

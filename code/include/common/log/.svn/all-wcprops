@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log
+END
+LogLevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/LogLevel.h
+END
+Appender.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/Appender.h
+END
+Logger.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/Logger.h
+END
+SyslogAppender.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/SyslogAppender.h
+END
+ConsoleAppender.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/ConsoleAppender.h
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/log.h
+END
+LoggerFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/log/LoggerFactory.h
+END

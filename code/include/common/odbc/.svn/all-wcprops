@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc
+END
+ConnectionPool.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/ConnectionPool.h
+END
+odbctypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/odbctypes.h
+END
+Connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/Connection.h
+END
+odbcerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/odbcerr.h
+END
+ConnectionImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/ConnectionImpl.h
+END
+ODBCBindColumnException.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/ODBCBindColumnException.h
+END
+ODBCBindParameterException.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/ODBCBindParameterException.h
+END
+Statement.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/Statement.h
+END
+ODBCException.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/ODBCException.h
+END
+ConnectionFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/ConnectionFactory.h
+END
+odbc.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/odbc/odbc.h
+END

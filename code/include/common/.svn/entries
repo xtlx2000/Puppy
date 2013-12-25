@@ -1,0 +1,52 @@
+10
+
+dir
+22585
+http://192.168.1.19/svn/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common
+http://192.168.1.19/svn
+
+
+
+2013-11-17T02:36:25.689077Z
+22464
+xxk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd6da152-e32d-4a70-86a7-b653be95917b
+
+Timer
+dir
+
+xml
+dir
+
+log
+dir
+
+daemon
+dir
+
+odbc
+dir
+
+comm
+dir
+
+util
+dir
+
+sys
+dir
+

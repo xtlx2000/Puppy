@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22490/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver
+END
+TestWorkItem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22487/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/TestWorkItem.cpp
+END
+ClientAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/ClientAgent.h
+END
+TestTask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22487/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/TestTask.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/22490/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/main.cpp
+END
+TestWorkItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22487/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/TestWorkItem.h
+END
+testprotocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22428/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/testprotocol.h
+END
+TestTask.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/22487/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/TestTask.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22458/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/Makefile.am
+END
+ClientAgent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/testserver/ClientAgent.cpp
+END

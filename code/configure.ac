@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([base], [1.0], [lvpengcheng6300@gmail.com])
+AC_INIT([NDSLcommon], [1.0], [marxxk@163.com])
 AC_CONFIG_SRCDIR([])
 AM_INIT_AUTOMAKE(IPPC, 1.0)
 AC_CONFIG_HEADERS([config.h])

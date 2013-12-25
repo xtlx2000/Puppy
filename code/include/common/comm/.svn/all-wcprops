@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm
+END
+Error.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/Error.h
+END
+comm.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/comm.h
+END
+UnxDmnReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnReader.h
+END
+TaskManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TaskManager.h
+END
+UDPAgentWriteCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UDPAgentWriteCallback.h
+END
+UDPSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UDPSocket.h
+END
+TCPAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPAgent.h
+END
+UnxDmnWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnWriter.h
+END
+UnxDmnListenAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnListenAgent.h
+END
+UDPReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UDPReader.h
+END
+Epoll.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/Epoll.h
+END
+Tool.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/Tool.h
+END
+EpollEvent.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/EpollEvent.h
+END
+UDPAgentReadCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UDPAgentReadCallback.h
+END
+BaseReq.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/BaseReq.h
+END
+TCPListenAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPListenAgent.h
+END
+UDPWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UDPWriter.h
+END
+AgentManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/AgentManager.h
+END
+BaseTask.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/BaseTask.h
+END
+TCPAgentWriteCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPAgentWriteCallback.h
+END
+Agent.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/Agent.h
+END
+SocketAddress.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/SocketAddress.h
+END
+TCPSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPSocket.h
+END
+UnxDmnAgentReadCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnAgentReadCallback.h
+END
+Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/Reader.h
+END
+BufferManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/BufferManager.h
+END
+UDPAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UDPAgent.h
+END
+WriteCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/WriteCallback.h
+END
+TCPReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPReader.h
+END
+Writer.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/Writer.h
+END
+TCPAgentReadCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPAgentReadCallback.h
+END
+AppProtoSpec.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22411/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/AppProtoSpec.h
+END
+UnxDmnAgentWriteCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnAgentWriteCallback.h
+END
+UnxDmnSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnSocket.h
+END
+TCPWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22406/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/TCPWriter.h
+END
+BaseHeader.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/22448/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/BaseHeader.h
+END
+UnxDmnAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnAgent.h
+END
+ReadCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/ReadCallback.h
+END
+UnxDmnSocketAddress.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/include/common/comm/UnxDmnSocketAddress.h
+END

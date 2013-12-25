@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/22564/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm
+END
+SocketAddress.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/SocketAddress.cpp
+END
+Agent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/Agent.cpp
+END
+TCPSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/TCPSocket.cpp
+END
+UDPSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/UDPSocket.cpp
+END
+Reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22411/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/Reader.cpp
+END
+BufferManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/BufferManager.cpp
+END
+TCPAgent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/TCPAgent.cpp
+END
+UDPAgent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/UDPAgent.cpp
+END
+Epoll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/22490/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/Epoll.cpp
+END
+Writer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22564/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/Writer.cpp
+END
+Tool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/Tool.cpp
+END
+EpollEvent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/EpollEvent.cpp
+END
+UnxDmnSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/UnxDmnSocket.cpp
+END
+UDPWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/UDPWriter.cpp
+END
+UnxDmnAgent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22464/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/UnxDmnAgent.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/Makefile.am
+END
+AgentManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/AgentManager.cpp
+END
+TaskManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22459/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/comm/TaskManager.cpp
+END

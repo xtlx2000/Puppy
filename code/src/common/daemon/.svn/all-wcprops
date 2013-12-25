@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/daemon
+END
+Daemon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/22451/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/daemon/Daemon.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/22390/NDSL%E6%9C%80%E6%96%B0%E5%9F%BA%E7%B1%BB/code/trunk/src/common/daemon/Makefile.am
+END
