@@ -9,6 +9,7 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -21,6 +22,7 @@ EventHandlerThread()
 	}
 
 	int rt = socketpair( AF_UNIX, SOCK_STREAM, 0, m_hHandle);
+	//int rt = pipe(m_hHandle);
 	if(-1 == rt)
 	{
 		DEBUG_LOG( "socketpair() error." );

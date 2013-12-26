@@ -45,6 +45,7 @@ AC_CONFIG_FILES([Makefile
                  src/testserver/Makefile
                  src/testclient/Makefile
                  src/threadpool2/Makefile
+                 src/threadpool3/Makefile
                  src/doublequeue/Makefile
                  test/Makefile
                  ])

@@ -45,7 +45,8 @@ LTLIBRARIES = $(noinst_LTLIBRARIES)
 libsys_la_LIBADD =
 am_libsys_la_OBJECTS = Cond.lo Exception.lo Mutex.lo Thread.lo \
 	ThreadPool.lo ThreadPoolDispatcher.lo ThreadPool2.lo \
-	ThreadPoolDispatcher2.lo Time.lo
+	ThreadPoolDispatcher2.lo ThreadPool3.lo \
+	ThreadPoolDispatcher3.lo Time.lo
 libsys_la_OBJECTS = $(am_libsys_la_OBJECTS)
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -200,6 +201,8 @@ libsys_la_SOURCES = Cond.cpp \
 				  ThreadPoolDispatcher.cpp \
 				  ThreadPool2.cpp \
 				  ThreadPoolDispatcher2.cpp \
+				  ThreadPool3.cpp \
+				  ThreadPoolDispatcher3.cpp \
 				  Time.cpp 
 
 all: all-recursive
@@ -259,8 +262,10 @@ include ./$(DEPDIR)/Mutex.Plo
 include ./$(DEPDIR)/Thread.Plo
 include ./$(DEPDIR)/ThreadPool.Plo
 include ./$(DEPDIR)/ThreadPool2.Plo
+include ./$(DEPDIR)/ThreadPool3.Plo
 include ./$(DEPDIR)/ThreadPoolDispatcher.Plo
 include ./$(DEPDIR)/ThreadPoolDispatcher2.Plo
+include ./$(DEPDIR)/ThreadPoolDispatcher3.Plo
 include ./$(DEPDIR)/Time.Plo
 
 .cpp.o:

@@ -6,7 +6,7 @@
 #include "common/util/util.h"
 #include "common/sys/Thread.h"
 
-#include "common/sys/ThreadPool2.h"
+#include "common/sys/ThreadPool3.h"
 
 
 #include <stdlib.h>
@@ -42,7 +42,7 @@ private:
 TimeCounter tc;
 
 Epoll  *g_pEpoll  = NULL;
-ThreadPool2 *g_pThreadPool2 = NULL;
+ThreadPool3 *g_pThreadPool3 = NULL;
 long long  itemnum;
 
 
@@ -63,7 +63,7 @@ void doExit(int signo)
     }
 }
 
-class TestItem : public ThreadPoolWorkItem2
+class TestItem : public ThreadPoolWorkItem3
 {
 public:
 	int process()
@@ -101,13 +101,13 @@ int main(int argc, char *argv[])
         return FAILED;
     }
 
-    g_pThreadPool2 = new ThreadPool2();
-    g_pThreadPool2->start();
+    g_pThreadPool3 = new ThreadPool3();
+    g_pThreadPool3->start();
 
 	tc.begin();
 	for(int i = 0; i < 10000000; i++){
-		ThreadPoolWorkItem2 *item1 = new TestItem();
-    	g_pThreadPool2->postRequest( item1);
+		ThreadPoolWorkItem3 *item1 = new TestItem();
+    	g_pThreadPool3->postRequest( item1);
     }
     
 

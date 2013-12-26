@@ -32,7 +32,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = $(top_srcdir)/bin/threadpool$(EXEEXT)
+bin_PROGRAMS = $(top_srcdir)/bin/threadpool2$(EXEEXT)
 subdir = src/threadpool2
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -45,10 +45,10 @@ CONFIG_CLEAN_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am___top_srcdir__bin_threadpool_OBJECTS = main.$(OBJEXT)
-__top_srcdir__bin_threadpool_OBJECTS =  \
-	$(am___top_srcdir__bin_threadpool_OBJECTS)
-__top_srcdir__bin_threadpool_DEPENDENCIES =  \
+am___top_srcdir__bin_threadpool2_OBJECTS = main.$(OBJEXT)
+__top_srcdir__bin_threadpool2_OBJECTS =  \
+	$(am___top_srcdir__bin_threadpool2_OBJECTS)
+__top_srcdir__bin_threadpool2_DEPENDENCIES =  \
 	$(top_srcdir)/lib/libcommon.la
 am__dirstamp = $(am__leading_dot)dirstamp
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
@@ -63,8 +63,8 @@ CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
-SOURCES = $(__top_srcdir__bin_threadpool_SOURCES)
-DIST_SOURCES = $(__top_srcdir__bin_threadpool_SOURCES)
+SOURCES = $(__top_srcdir__bin_threadpool2_SOURCES)
+DIST_SOURCES = $(__top_srcdir__bin_threadpool2_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -184,8 +184,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 INCLUDES = -I$(top_srcdir)/include
-__top_srcdir__bin_threadpool_SOURCES = main.cpp
-__top_srcdir__bin_threadpool_LDADD = $(top_srcdir)/lib/libcommon.la
+__top_srcdir__bin_threadpool2_SOURCES = main.cpp
+__top_srcdir__bin_threadpool2_LDADD = $(top_srcdir)/lib/libcommon.la
 all: all-am
 
 .SUFFIXES:
@@ -250,9 +250,9 @@ clean-binPROGRAMS:
 $(top_srcdir)/bin/$(am__dirstamp):
 	@$(MKDIR_P) $(top_srcdir)/bin
 	@: > $(top_srcdir)/bin/$(am__dirstamp)
-$(top_srcdir)/bin/threadpool$(EXEEXT): $(__top_srcdir__bin_threadpool_OBJECTS) $(__top_srcdir__bin_threadpool_DEPENDENCIES) $(top_srcdir)/bin/$(am__dirstamp)
-	@rm -f $(top_srcdir)/bin/threadpool$(EXEEXT)
-	$(CXXLINK) $(__top_srcdir__bin_threadpool_OBJECTS) $(__top_srcdir__bin_threadpool_LDADD) $(LIBS)
+$(top_srcdir)/bin/threadpool2$(EXEEXT): $(__top_srcdir__bin_threadpool2_OBJECTS) $(__top_srcdir__bin_threadpool2_DEPENDENCIES) $(top_srcdir)/bin/$(am__dirstamp)
+	@rm -f $(top_srcdir)/bin/threadpool2$(EXEEXT)
+	$(CXXLINK) $(__top_srcdir__bin_threadpool2_OBJECTS) $(__top_srcdir__bin_threadpool2_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
