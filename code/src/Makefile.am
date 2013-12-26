@@ -1,1 +1,1 @@
-SUBDIRS=protocol common testserver testclient
+SUBDIRS=protocol common testserver testclient threadpool2 doublequeue

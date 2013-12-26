@@ -3,7 +3,7 @@
  *
  *       Filename:  ThreadPool.h
  *
- *    Description:  çº¿ç¨‹æ± å®ç°
+ *    Description:  Ïß³Ì³ØÊµÏÖ
  *
  *        Version:  1.0
  *        Created:  04/26/2011 11:11:25 PM
@@ -26,22 +26,22 @@
 using std::cout;
 using std::endl;
 
-// æœ€å¤§ç©ºé—²çº¿ç¨‹æ•°
+// ×î´ó¿ÕÏĞÏß³ÌÊı
 #define THREAD_MAX_IDLE_DEFAULT 15
-// æœ€å¤§çº¿ç¨‹æ€»æ•°
+// ×î´óÏß³Ì×ÜÊı
 #define THREAD_MAX_TOTAL_DEFAULT 60
 
 /**
- * @brief çº¿ç¨‹æ± å®ç°
+ * @brief Ïß³Ì³ØÊµÏÖ
  */
 class ThreadPool
 {
 public:
     /**
-     * @brief æ„é€ å‡½æ•°
+     * @brief ¹¹Ôìº¯Êı
      *
-     * @param maxIdle æœ€å¤§ç©ºé—²çº¿ç¨‹æ•°
-     * @param maxTotal æœ€å¤§çº¿ç¨‹æ€»æ•°
+     * @param maxIdle ×î´ó¿ÕÏĞÏß³ÌÊı
+     * @param maxTotal ×î´óÏß³Ì×ÜÊı
      */
     ThreadPool( int maxIdle = THREAD_MAX_IDLE_DEFAULT,
                 int maxTotal = THREAD_MAX_TOTAL_DEFAULT );
@@ -49,33 +49,33 @@ public:
     ~ThreadPool();
 
     /**
-     * @brief ä¸‹å‘ä»»åŠ¡åˆ°çº¿ç¨‹æ± ï¼Œå³å†™å…¥m_hWriteHandle
+     * @brief ÏÂ·¢ÈÎÎñµ½Ïß³Ì³Ø£¬¼´Ğ´Èëm_hWriteHandle
      *
-     * @param pWorkItem çº¿ç¨‹æ± ä»»åŠ¡æŒ‡é’ˆ
+     * @param pWorkItem Ïß³Ì³ØÈÎÎñÖ¸Õë
      *
      * @return
-     *      - 0 æˆåŠŸ
-     *      - ... å¤±è´¥çš„errno
+     *      - 0 ³É¹¦
+     *      - ... Ê§°ÜµÄerrno
      */
     int postRequest( const ThreadPoolWorkItem* pWorkItem );
 
     /**
-     * @brief è¿”å›çº¿ç¨‹æ± å¥æŸ„ï¼Œå³m_hWriteHandle
+     * @brief ·µ»ØÏß³Ì³Ø¾ä±ú£¬¼´m_hWriteHandle
      *
-     * @return çº¿ç¨‹æ± å¥æŸ„
+     * @return Ïß³Ì³Ø¾ä±ú
      */
     int getWHandle() const;
 	int getRHandle() const;
 
     /**
-     * @brief å¯åŠ¨çº¿ç¨‹æ± 
+     * @brief Æô¶¯Ïß³Ì³Ø
      *
      * @return
      */
     int start();
 
     /**
-     * @brief åœæ­¢çº¿ç¨‹æ± 
+     * @brief Í£Ö¹Ïß³Ì³Ø
      *
      * @return
      */
@@ -87,7 +87,7 @@ protected:
     ThreadPool& operator=( const ThreadPool& tp );
 
     /**
-     * @brief çº¿ç¨‹æ± ä¸­æ‰§è¡Œäº‹ä»¶å¤„ç†çš„çº¿ç¨‹
+     * @brief Ïß³Ì³ØÖĞÖ´ĞĞÊÂ¼ş´¦ÀíµÄÏß³Ì
      */
     class EventHandlerThread : public Thread
     {
@@ -99,7 +99,7 @@ protected:
     };
 
     /**
-     * @brief çº¿ç¨‹æ± æ”¶åˆ°æ­¤ä»»åŠ¡åˆ™é€€å‡º
+     * @brief Ïß³Ì³ØÊÕµ½´ËÈÎÎñÔòÍË³ö
      */
     class ThreadExitWorkItem : public ThreadPoolWorkItem
     {
@@ -108,8 +108,8 @@ protected:
     };
 
 private:
-    int m_hReadHandle;  // ç®¡é“è¯»ç«¯
-    int m_hWriteHandle;  // ç®¡é“å†™ç«¯
+    int m_hReadHandle;  // ¹ÜµÀ¶Á¶Ë
+    int m_hWriteHandle;  // ¹ÜµÀĞ´¶Ë
     int m_nMaxIdle;
     int m_nMaxTotal;
     std::list<Thread*> m_threadList;

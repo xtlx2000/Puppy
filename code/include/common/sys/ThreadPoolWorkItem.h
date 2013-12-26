@@ -6,7 +6,7 @@
 #include "common/sys/ThreadPoolDispatcher.h"
 
 /**
- * @brief çº¿ç¨‹æ± ä»»åŠ¡ç±»æ¥å£
+ * @brief Ïß³Ì³ØÈÎÎñÀà½Ó¿Ú
  */
 class ThreadPoolWorkItem
 {
@@ -15,7 +15,7 @@ public:
     virtual ~ThreadPoolWorkItem() {}
 
     /**
-     * @brief åœ¨æ‰§è¡Œå…·ä½“ä¸šåŠ¡å‰çš„å…¬å…±æ“ä½œ
+     * @brief ÔÚÖ´ĞĞ¾ßÌåÒµÎñÇ°µÄ¹«¹²²Ù×÷
      *
      * @return
      */
@@ -25,14 +25,14 @@ public:
     }
 
     /**
-     * @brief å®ç°æ­¤æ–¹æ³•ä»¥æ‰§è¡Œå…·ä½“ä¸šåŠ¡
+     * @brief ÊµÏÖ´Ë·½·¨ÒÔÖ´ĞĞ¾ßÌåÒµÎñ
      *
      * @return
      */
     virtual int process() = 0;
 
     /**
-     * @brief æ‰§è¡Œå…·ä½“ä¸šåŠ¡åçš„å…¬å…±æ“ä½œ
+     * @brief Ö´ĞĞ¾ßÌåÒµÎñºóµÄ¹«¹²²Ù×÷
      *
      * @return
      */

@@ -7,4 +7,6 @@ libsys_la_SOURCES=Cond.cpp \
 				  Thread.cpp \
 				  ThreadPool.cpp \
 				  ThreadPoolDispatcher.cpp \
+				  ThreadPool2.cpp \
+				  ThreadPoolDispatcher2.cpp \
 				  Time.cpp 

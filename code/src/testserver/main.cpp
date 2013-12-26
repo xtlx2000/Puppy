@@ -35,6 +35,8 @@ Epoll  *g_pEpoll  = NULL;
 TCPListenAgent<ClientAgent> *g_pListenCA = NULL;
 ThreadPool *g_pThreadPool = NULL;
 ThreadPoolDispatcher *g_pDispatcher = NULL;
+
+
 SocketAddress servaddr;
 
 const int EPOLLSIZE = 1024;
