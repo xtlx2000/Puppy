@@ -1,3 +1,8 @@
+/*
+  * the implement of ThreadPool3 is base on multi-DoubleQueue.
+  *
+  */
+
 #include "common/comm/Epoll.h"
 #include "common/comm/TCPListenAgent.h"
 #include "common/comm/AgentManager.h"

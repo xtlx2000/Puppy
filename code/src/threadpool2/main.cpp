@@ -1,3 +1,9 @@
+/*
+  * the implement of ThreadPool2 is base on multi-socketpair.
+  *
+  */
+
+
 #include "common/comm/Epoll.h"
 #include "common/comm/TCPListenAgent.h"
 #include "common/comm/AgentManager.h"

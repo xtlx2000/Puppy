@@ -3,7 +3,7 @@
  *
  *       Filename:  ThreadPoolDispatcher.cpp
  *
- *    Description:  çº¿ç¨‹æ± ä»»åŠ¡è½¬å‘
+ *    Description:  Ïß³Ì³ØÈÎÎñ×ª·¢
  *
  *        Version:  1.0
  *        Created:  04/27/2011 11:40:53 AM
@@ -49,7 +49,7 @@ ThreadPoolDispatcher::ThreadPoolDispatcher()
     {
     }
 
-    // è®¾ç½®çº¿ç¨‹æ± å¥æŸ„
+    // ÉèÖÃÏß³Ì³Ø¾ä±ú
     m_writeEpollEvent.setFd( m_hThreadPoolHandle );
     rt = m_writeEpollEvent.registerWEvent();
     if ( rt < 0)
@@ -78,7 +78,7 @@ ThreadPoolDispatcher::ThreadPoolDispatcher()
 
     m_readEpollEvent.setFd( m_hReadHandle );
 
-    // æ³¨å†Œç®¡é“è¯»äº‹ä»¶
+    // ×¢²á¹ÜµÀ¶ÁÊÂ¼ş
     rt = m_readEpollEvent.registerREvent();
     if ( rt < 0)
     {
@@ -138,7 +138,7 @@ ThreadPoolDispatcher::postRequest(
 {
     m_workItemList.push_back( pWorkItem );
 
-    // æ‰“å¼€çº¿ç¨‹æ± å¥æŸ„å†™äº‹ä»¶
+    // ´ò¿ªÏß³Ì³Ø¾ä±úĞ´ÊÂ¼ş
     int rt = m_writeEpollEvent.openWevent();
     if ( rt < 0)
     {
@@ -171,7 +171,7 @@ ThreadPoolDispatcher::sendData()
 
     if ( m_workItemList.empty() )
     {
-        // å…³é—­å†™äº‹ä»¶
+        // ¹Ø±ÕĞ´ÊÂ¼ş
         rt = m_writeEpollEvent.closeWevent();
         if ( rt < 0)
         {
@@ -214,13 +214,13 @@ ThreadPoolDispatcher::recvData()
 
         if ( NULL == pTask )
         {
-            // taskå·²ææ„
+            // taskÒÑÎö¹¹
             delete pWorkItem;
             pWorkItem = NULL;
         }
         else
         {
-            // taskæ­£å¸¸
+            // taskÕı³£
             pTask->recvWorkItem( pWorkItem );
         }
     }

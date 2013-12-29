@@ -19,7 +19,7 @@ public:
 
 	virtual int postProcess()
 	{
-		//g_pDispatcher3->postResult(this);
+		g_pDispatcher3->postResult(this);
 		return SUCCESSFUL;
 	}
 

@@ -42,6 +42,7 @@ protected:
 		virtual void run();
 		
 		DoubleQueue<ThreadPoolWorkItem3 *>  m_queue;
+		int m_eventfd[2]; //对DoubleQueue支持epoll驱动
 		
 	};
 

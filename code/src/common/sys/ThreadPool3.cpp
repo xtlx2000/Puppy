@@ -21,12 +21,26 @@ EventHandlerThread()
 		DEBUG_LOG( "NULL pointer argument." );
 	}
 
-	//int rt = socketpair( AF_UNIX, SOCK_STREAM, 0, m_hHandle);
-	//int rt = pipe(m_hHandle);
-	//if(-1 == rt)
-	//{
-	//	DEBUG_LOG( "socketpair() error." );
-	//}
+	int rt = socketpair( AF_UNIX, SOCK_STREAM, 0, m_eventfd);
+	if(-1 == rt)
+	{
+		DEBUG_LOG( "socketpair() error." );
+	}
+
+	//trigger m_eventfd[1] EPOLLIN
+	rt = ::write(m_eventfd[0], "trigger m_eventfd[1] EPOLLIN", 
+			sizeof("trigger m_eventfd[1] EPOLLIN"));
+	if(-1 == rt)
+	{
+		DEBUG_LOG( "socketpair() write error." );
+	}
+	//trigger m_eventfd[0] EPOLLIN
+	rt = ::write(m_eventfd[1], "trigger m_eventfd[0] EPOLLIN", 
+			sizeof("trigger m_eventfd[0] EPOLLIN"));
+	if(-1 == rt)
+	{
+		DEBUG_LOG( "socketpair() write error." );
+	}
 }
 
 int ThreadPool3::EventHandlerThread::
