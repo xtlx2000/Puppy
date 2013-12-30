@@ -2,6 +2,7 @@
 #define _THREADPOOLDISPATCHER3_H_
 
 #include <list>
+#include <map>
 
 #include "common/comm/Agent.h"
 #include "common/comm/EpollEvent.h"
@@ -33,9 +34,16 @@ protected:
 	//for epoll
 	EpollEvent m_readEpollEvent;
 	EpollEvent m_writeEpollEvent;
+	std::map<int, EpollEvent> m_readEpollEvents;
 	
 };
 extern ThreadPoolDispatcher3 *g_pDispatcher3;
+
+/* use ThreadPoolDispatcher3:
+ *   ThreadPoolDispatcher3 *g_pDispatcher3 = 
+ * 		(AgentManager::getInstance())->createAgent<ThreadPoolDispatcher3>();
+ *
+ */
 
 
 #endif

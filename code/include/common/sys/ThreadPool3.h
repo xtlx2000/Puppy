@@ -27,6 +27,9 @@ public:
 	int postRequest( int threadID, const ThreadPoolWorkItem3* pWorkItem );
 	int start();
 	int stop();
+
+	int getMaxIdle();
+	int getEventHandlerThreadResultFd(int threadid);
 protected:
 	ThreadPool3( const ThreadPool3& tp );
 	ThreadPool3& operator=( const ThreadPool3& tp );
@@ -37,12 +40,23 @@ protected:
 		EventHandlerThread();
 
 		int DispatchItem(const ThreadPoolWorkItem3 *item);
+
+		int getResultFd();
 		
 	protected:
 		virtual void run();
+		void SetNonblock(int fd);
 		
 		DoubleQueue<ThreadPoolWorkItem3 *>  m_queue;
-		int m_eventfd[2]; //对DoubleQueue支持epoll驱动
+		
+		class EventHandlerAgent : public Agent
+		{
+		public:
+			int m_eventfd[2];
+			EpollEvent readEvent;
+		};
+		
+		EventHandlerAgent m_eventAgent; //对DoubleQueue支持epoll驱动
 		
 	};
 

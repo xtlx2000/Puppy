@@ -27,6 +27,9 @@ EventHandlerThread()
 		DEBUG_LOG( "socketpair() error." );
 	}
 
+	setNonblock(m_eventfd[0]);
+	setNonblock(m_eventfd[1]);
+
 	//trigger m_eventfd[1] EPOLLIN
 	rt = ::write(m_eventfd[0], "trigger m_eventfd[1] EPOLLIN", 
 			sizeof("trigger m_eventfd[1] EPOLLIN"));
@@ -56,6 +59,13 @@ DispatchItem(const ThreadPoolWorkItem3 *item)
 
 	return SUCCESSFUL;
 }
+
+int ThreadPool3::EventHandlerThread::
+getResultFd()
+{
+	return m_eventfd[1];
+}
+
 
 void ThreadPool3::EventHandlerThread::
 run()
@@ -89,6 +99,28 @@ run()
         pWorkItem->postProcess();
 	}
 }
+
+int
+ThreadPool3::EventHandlerThread::setNonblock( int fd ) const
+{
+    int val;
+
+    if ( ( val = fcntl( fd, F_GETFL, 0 ) ) < 0 )
+    {
+        DEBUG_LOG( "Syscall Error: fcntl. %s", strerror( errno ) );
+        return val;
+    }
+
+    val |= O_NONBLOCK;
+    if ( fcntl( fd, F_SETFL, val ) < 0 )
+    {
+        DEBUG_LOG( "Syscall Error: fcntl. %s", strerror( errno ) );
+        return FAILED;
+    }
+
+    return SUCCESSFUL;
+}
+
 
 
 ThreadPool3::ThreadPool3( int maxIdle, int maxTotal ) :
@@ -163,6 +195,18 @@ int ThreadPool3::stop()
 
 	return SUCCESSFUL;
 }
+
+int ThreadPool3::getMaxIdle()
+{
+	return m_nMaxIdle;
+}
+
+int ThreadPool3::getEventHandlerThreadResultFd(int threadid)
+{
+	return m_threadMap[threadid].getResultFd();
+}
+
+
 
 ThreadPool3::~ThreadPool3()
 {
