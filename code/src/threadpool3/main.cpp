@@ -13,6 +13,7 @@
 
 #include "common/sys/ThreadPool3.h"
 #include "common/sys/ThreadPoolDispatcher3.h"
+#include "common/comm/BaseTask.h"
 
 
 #include <stdlib.h>
@@ -100,11 +101,37 @@ public:
 class Test2Task : public BaseTask
 {
 public:
+    int goNext(){};
+
 	virtual void recvWorkItem( ThreadPoolWorkItem3* pWorkItem) 
 	{
+		delete pWorkItem;
+		__sync_fetch_and_add(&itemnum, 1);
 		
+		if(itemnum % 100000 == 0){
+			cout <<"num="<<itemnum<<endl;
+		}
+		
+		if(itemnum == 9999999){
+			tc.end();
+			cout <<"time:"<<tc.diff()<<endl;
+			exit(0);
+		}
 	}
 };
+
+class Test2Item : public ThreadPoolWorkItem3
+{
+public:
+	int process()
+	{
+
+		
+		return 0;
+	}
+	
+};
+
 
 int main(int argc, char *argv[])
 {
@@ -123,10 +150,23 @@ int main(int argc, char *argv[])
     g_pDispatcher3 = (AgentManager::getInstance())->createAgent<ThreadPoolDispatcher3>();
     g_pDispatcher3->init();
 
+	//-------------threadpool3-----------
+	/*
 	tc.begin();
 	for(int i = 0; i < 10000000; i++){
 		ThreadPoolWorkItem3 *item1 = new TestItem();
     	g_pThreadPool3->postRequest( item1);
+    	
+    }
+    */
+
+    //------------dispatcher3------------
+	BaseTask *pTask = (TaskManager::getInstance())->create<Test2Task>();
+    tc.begin();
+    for(int i = 0; i < 10000000; i++){
+    	ThreadPoolWorkItem3 *item1 = new TestItem();
+    	item1->setTaskID(pTask->getID());
+    	g_pDispatcher3->postRequest( item1);
     }
     
 
