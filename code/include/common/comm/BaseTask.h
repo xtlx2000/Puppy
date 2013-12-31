@@ -25,6 +25,8 @@
 struct BaseRequest;
 struct InReq;
 class ThreadPoolWorkItem;
+class ThreadPoolWorkItem2;
+class ThreadPoolWorkItem3;
 
 class BaseTask
 {
@@ -54,6 +56,8 @@ public:
 
     //add for threadPool
     virtual void recvWorkItem( ThreadPoolWorkItem* ) {}
+    virtual void recvWorkItem( ThreadPoolWorkItem2* ) {}
+    virtual void recvWorkItem( ThreadPoolWorkItem3* ) {}
 
 private:
     uint64_t m_ID;

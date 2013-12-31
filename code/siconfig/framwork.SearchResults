@@ -1,12 +1,2 @@
----- setHandlerID Matches (11 in 8 files) ----
-EpollEvent.h (include\common\comm):    void setHandlerID( uint32_t handlerid )
-TCPAgent.cpp (src\common\comm):    m_epollEvent.setHandlerID( getID());
-TCPAgent.cpp (src\common\comm):    m_epollEvent.setHandlerID( getID());
-TCPListenAgent.h (include\common\comm):    m_epollEvent.setHandlerID( getID());
-ThreadPoolDispatcher.cpp (src\common\sys):    m_readEpollEvent.setHandlerID( getID());
-ThreadPoolDispatcher.cpp (src\common\sys):    m_writeEpollEvent.setHandlerID( getID() );
-Timer.cpp (src\common\timer):    m_epollEvent.setHandlerID( getID() );
-UDPAgent.cpp (src\common\comm):    m_epollEvent.setHandlerID( getID() );
-UnxDmnAgent.cpp (src\common\comm):    m_epollEvent.setHandlerID( getID() );
-UnxDmnAgent.cpp (src\common\comm):    m_epollEvent.setHandlerID( getID() );
-UnxDmnListenAgent.h (include\common\comm):    m_epollEvent.setHandlerID( getID() );
+---- m_RequestQueue.pop Matches (1 in 1 files) ----
+ThreadPool3.cpp (src\common\sys):		bool ret = m_RequestQueue.pop(&pWorkItem);

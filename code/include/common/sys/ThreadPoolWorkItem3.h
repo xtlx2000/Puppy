@@ -4,6 +4,9 @@
 #include <stdint.h>
 #include "common/comm/Error.h"
 
+#include "common/sys/ThreadPoolDispatcher3.h"
+
+
 class ThreadPoolWorkItem3
 {
 public:

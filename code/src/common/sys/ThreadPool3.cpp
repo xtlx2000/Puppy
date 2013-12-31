@@ -21,37 +21,13 @@ EventHandlerThread()
 		DEBUG_LOG( "NULL pointer argument." );
 	}
 
-	int rt = socketpair( AF_UNIX, SOCK_STREAM, 0, m_eventfd);
-	if(-1 == rt)
-	{
-		DEBUG_LOG( "socketpair() error." );
-	}
-
-	setNonblock(m_eventfd[0]);
-	setNonblock(m_eventfd[1]);
-
-	//trigger m_eventfd[1] EPOLLIN
-	rt = ::write(m_eventfd[0], "trigger m_eventfd[1] EPOLLIN", 
-			sizeof("trigger m_eventfd[1] EPOLLIN"));
-	if(-1 == rt)
-	{
-		DEBUG_LOG( "socketpair() write error." );
-	}
-	//trigger m_eventfd[0] EPOLLIN
-	rt = ::write(m_eventfd[1], "trigger m_eventfd[0] EPOLLIN", 
-			sizeof("trigger m_eventfd[0] EPOLLIN"));
-	if(-1 == rt)
-	{
-		DEBUG_LOG( "socketpair() write error." );
-	}
 }
 
 int ThreadPool3::EventHandlerThread::
 DispatchItem(const ThreadPoolWorkItem3 *item)
 {
-	//int rt = util::io::writen(m_hHandle[0], &item, sizeof(ThreadPoolWorkItem3 *));
 	ThreadPoolWorkItem3 *pItem = const_cast<ThreadPoolWorkItem3 *>(item);
-	bool ret = m_queue.push(pItem);
+	bool ret = m_RequestQueue.push(pItem);
 	if(ret != true)
 	{
 		return FAILED;
@@ -61,10 +37,20 @@ DispatchItem(const ThreadPoolWorkItem3 *item)
 }
 
 int ThreadPool3::EventHandlerThread::
-getResultFd()
+ResultItem(const ThreadPoolWorkItem3 *item)
 {
-	return m_eventfd[1];
+	ThreadPoolWorkItem3 *pItem = const_cast<ThreadPoolWorkItem3 *>(item);
+	bool ret = m_ResultQueue.push(pItem);
+	if(ret != true)
+	{
+		return FAILED;
+	}
+
+	return SUCCESSFUL;
 }
+
+
+
 
 
 void ThreadPool3::EventHandlerThread::
@@ -74,19 +60,11 @@ run()
 
 	for(; ; )
 	{
-		//int rt = util::io::readn( m_hHandle[1],
-		//							static_cast<void*>( &pWorkItem ),
-		//							sizeof( void* ) );
-		bool ret = m_queue.pop(&pWorkItem);
+
+		bool ret = m_RequestQueue.pop(&pWorkItem);
 
 		pthread_testcancel();
-		//if(sizeof( void* ) != rt)
-		//{
-		//	if( EINTR != errno)
-		//	{
-		//		DEBUG_LOG( "Syscall Error: read. %s", strerror( errno ) );
-		//	}
-		//}
+
 		if(ret != true)
 		{
 			DEBUG_LOG( "pop error:queue is empty.");
@@ -98,27 +76,6 @@ run()
         pWorkItem->process();
         pWorkItem->postProcess();
 	}
-}
-
-int
-ThreadPool3::EventHandlerThread::setNonblock( int fd ) const
-{
-    int val;
-
-    if ( ( val = fcntl( fd, F_GETFL, 0 ) ) < 0 )
-    {
-        DEBUG_LOG( "Syscall Error: fcntl. %s", strerror( errno ) );
-        return val;
-    }
-
-    val |= O_NONBLOCK;
-    if ( fcntl( fd, F_SETFL, val ) < 0 )
-    {
-        DEBUG_LOG( "Syscall Error: fcntl. %s", strerror( errno ) );
-        return FAILED;
-    }
-
-    return SUCCESSFUL;
 }
 
 
@@ -160,6 +117,51 @@ int ThreadPool3::postRequest(int threadID, const ThreadPoolWorkItem3 * pWorkItem
 	return rt;
 }
 
+int ThreadPool3::postResult(const ThreadPoolWorkItem3 * pWorkItem)
+{	
+	int rt = postRequest(m_nNextThread, pWorkItem);
+	
+	return rt;
+}
+
+int ThreadPool3::postResult(int threadID, const ThreadPoolWorkItem3 * pWorkItem)
+{
+	EventHandlerThread *eventhandlerthread = m_threadMap[threadID];
+	if(eventhandlerthread == NULL)
+	{
+		return FAILED;
+	}
+
+	int rt = eventhandlerthread->ResultItem(pWorkItem);
+
+	return rt;
+}
+
+
+ThreadPoolWorkItem3* 
+ThreadPool3::
+popResultItem(int threadID)
+{
+
+	EventHandlerThread *eventhandlerthread = m_threadMap[threadID];
+	if(eventhandlerthread == NULL)
+	{
+		return NULL;
+	}
+
+	
+	ThreadPoolWorkItem3 *pWorkItem = NULL;
+
+	bool ret = eventhandlerthread->m_ResultQueue.pop(&pWorkItem);	
+	if(ret != true)
+	{
+		return NULL;
+	}
+
+	return pWorkItem;	
+}
+
+
 int ThreadPool3::start()
 {
 	for( int i = 0; i < m_nMaxIdle; ++i)
@@ -199,11 +201,6 @@ int ThreadPool3::stop()
 int ThreadPool3::getMaxIdle()
 {
 	return m_nMaxIdle;
-}
-
-int ThreadPool3::getEventHandlerThreadResultFd(int threadid)
-{
-	return m_threadMap[threadid].getResultFd();
 }
 
 

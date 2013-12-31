@@ -12,6 +12,7 @@
 #include "common/sys/Thread.h"
 
 #include "common/sys/ThreadPool3.h"
+#include "common/sys/ThreadPoolDispatcher3.h"
 
 
 #include <stdlib.h>
@@ -48,6 +49,7 @@ TimeCounter tc;
 
 Epoll  *g_pEpoll  = NULL;
 ThreadPool3 *g_pThreadPool3 = NULL;
+ThreadPoolDispatcher3 *g_pDispatcher3 = NULL;
 long long  itemnum;
 
 
@@ -95,6 +97,15 @@ public:
 	}
 };
 
+class Test2Task : public BaseTask
+{
+public:
+	virtual void recvWorkItem( ThreadPoolWorkItem3* pWorkItem) 
+	{
+		
+	}
+};
+
 int main(int argc, char *argv[])
 {
     g_pEpoll = new Epoll();
@@ -108,6 +119,9 @@ int main(int argc, char *argv[])
 
     g_pThreadPool3 = new ThreadPool3();
     g_pThreadPool3->start();
+
+    g_pDispatcher3 = (AgentManager::getInstance())->createAgent<ThreadPoolDispatcher3>();
+    g_pDispatcher3->init();
 
 	tc.begin();
 	for(int i = 0; i < 10000000; i++){

@@ -8,7 +8,7 @@
 #include "common/comm/EpollEvent.h"
 #include "common/sys/DoubleQueue.h"
 
-class ThreadPoolWorkItem;
+class ThreadPoolWorkItem3;
 
 class ThreadPoolDispatcher3 : public Agent
 {
@@ -22,19 +22,17 @@ public:
 	virtual int recvData();
 	virtual int sendData();
 
-	void postResult(const ThreadPoolWorkItem*);
+	void postResult(const ThreadPoolWorkItem3*);
 	
 protected:
 	int setNonblock(int fd) const;
 	
 protected:
-	ThreadPool3* m_pThreadPool;
-	DoubleQueue<ThreadPoolWorkItem3*> m_queue;
 
 	//for epoll
+	int m_eventfd[2];
 	EpollEvent m_readEpollEvent;
 	EpollEvent m_writeEpollEvent;
-	std::map<int, EpollEvent> m_readEpollEvents;
 	
 };
 extern ThreadPoolDispatcher3 *g_pDispatcher3;
