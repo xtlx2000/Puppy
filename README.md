@@ -1,4 +1,4 @@
-lpc-framework
+Puppy
 =============
 
 A programming framework based on linux.
