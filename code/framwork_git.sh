@@ -1,7 +1,7 @@
 cd ..
-rm -r ./lpc-framework/code/*
-cp -r ./framwork_lib/* ./lpc-framework/code/
-cd ./lpc-framework/
+rm -r ./puppy/code/*
+cp -r ./framwork_lib/* ./puppy/code/
+cd ./puppy/
 git add -A .
 git commit -m "commit"
 git push
