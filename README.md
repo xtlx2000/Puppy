@@ -5,7 +5,7 @@ A high-performance asynchronous event-driven library based on linux.
 
 
 ### INTRODUCTION
-Ultimate performance programming framework on linux platform.
+Ultimate performance programming framework on linux platform. This library has not finished now, and i will try my best :)
 
 Many programming framworks (such as [libevent](http://www.libevent.org/) \ [ACE](http://www.cs.wustl.edu/~schmidt/ACE.html) \ [muduo](https://code.google.com/p/muduo/) \ [tbcommon](http://code.taobao.org/p/tb-common-utils/src/) \ our laboratory's programming framework) are not fully exploit the machine's ultimate performance, so i want to do this.
 
